@@ -73,3 +73,84 @@ print(f"lst.index(2, 0, 5): {lst.index(2, 0, 5)}")  # 1
 
 # s.count(x) | X這個元素在S這個容器內出現幾次
 print(f"lst.count(2): {lst.index(2)}")  # 1 -> 2 出現 1 次
+
+print('###############################  List Update Operation  ##########################################')
+print('###########  s[i:j]  ###########')
+# s[i:j] = t | index從i到j的元素內容置換為X
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst[1:2] = [0, 0]
+print(f"lst[1:2] = [0, 0] \t\t-> {lst}")
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst[1:2] = [0, 0, 0]
+print(f"lst[1:2] = [0, 0, 0] \t-> {lst}")
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst[1:3] = [0, 0]
+print(f"lst[1:3] = [0, 0] \t\t-> {lst}")
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst[1:3] = [0, 0, 0]
+print(f"lst[1:3] = [0, 0, 0] \t-> {lst}")
+
+print('######################')
+# s[i:j:k] = t | index從i到j的元素，以step為k的方式，將內容置換為X
+# todo: need to find out an example
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# lst[0::2] = [0,0]
+# print(f"lst[0::2] = [0] \t-> {lst}")
+
+# del s[i:j] | 把index從i到j的元素刪除
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+del lst[1:3]
+print(f"del lst[1:3] -> {lst}")  # [1, 4, 5, 6, 7, 8, 9, 10] index 3 也被刪了
+
+# del s[i:j:k] | index從i到j的元素，以step為k的方式刪除元素
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+del lst[1::2]
+print(f"del lst[1::2] -> {lst}")  # [1, 3, 5, 7, 9]
+
+# s.append(x) | 將X塞到S容器的最後面
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.append(11)
+print(f"lst.append(11) -> {lst}")  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+# s.clear() | 將S容器的內容全部刪除(same as del s[:])
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.clear()
+print(f"lst.clear() -> {lst}")  # []
+
+# s.copy() | 複製S容器(same as s[:])
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst2 = lst.copy()
+print(f"lst2 = lst.copy() -> {lst2}")  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(f"lst2 is lst -> {lst2 is lst}")  # False
+
+# s.extend(t) | 同 s = s + t
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.extend([11, 12, 13])
+print(f"lst.extend([11, 12, 13]) -> {lst}")  # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+# s.insert(i,x) | 在S容器index為i的位置將X插入，原有的元素(們)將會往後移
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.insert(1,'a')
+print(f"lst.insert(1,'a') -> {lst}")  # [1, 'a', 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.insert(1,['a','b'])
+print(f"lst.insert(1,['a','b']) -> {lst}")  # [1, ['a', 'b'], 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# s.pop(i) | 將index為i的元素取出，並將其移出容器
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+val = lst.pop(2)
+print(f"val = lst.pop(2) -> val={val}, lst={lst}")  # val=3, lst=[1, 2, 4, 5, 6, 7, 8, 9, 10]
+
+# s.remove(x) | 刪除第一個找到的X
+lst = [1, 2, 3, 4, 5, 2]
+lst.remove(2)
+print(f"lst.remove(2) -> {lst}")  # [1, 3, 4, 5, 2]
+
+# s.reverse() | 讓容器的內容順序顛倒
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+lst.reverse()
+print(f"lst.reverse() -> {lst}")  # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
