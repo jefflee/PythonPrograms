@@ -8,7 +8,7 @@ print(t1)       # (10, 20)
 print(t2)       # (10, 'hello world')
 print(len(t2))  # 2
 
-
+print("====================  Split tuple into multiple variables.  =======================")
 t = ('apple','banana','orange','grap')
 a, b, c, d = t
 print(a)   # apple

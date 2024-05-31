@@ -44,3 +44,7 @@ print("======================  clear  =========================")
 a = {'name':'oxxo', 'age':18}
 a.clear()
 print(a)   # {}
+
+print("======================  print keys and values  =========================")
+for key, value in {'x': 1, 'y': 2, 'z': 3}.items():
+    print(key, value)
