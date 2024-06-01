@@ -30,7 +30,6 @@ a = enumerate(['a', 'b', 'c'])
 print(next(a))    # (0, 'a')
 print(next(a))    # (1, 'b')
 print(next(a))    # (2, 'c')
-print(next(a))
 print(list(a))    # []    # 全部取出後只剩下空串列
 
 b = iter(['a', 'b', 'c'])
