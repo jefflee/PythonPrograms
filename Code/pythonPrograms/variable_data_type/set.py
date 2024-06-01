@@ -73,3 +73,13 @@ a = {'a', 'b', 'c', 'd', 1, 2, 3}
 print('b' in a)    # True
 print(2 in a)      # True
 print(99 in a)     # False
+
+print("======================  Forzenset  =========================")
+a = frozenset()
+b = frozenset([1, 2, 3, 4, 5, 1, 2, 3, 4, 5])
+c = frozenset({'x': 1, 'y': 2, 'z': 3})
+d = frozenset('hello')
+print(a)   # frozenset()
+print(b)   # frozenset({1, 2, 3, 4, 5})
+print(c)   # frozenset({'x', 'z', 'y'})
+print(d)   # frozenset({'e', 'h', 'l', 'o'})

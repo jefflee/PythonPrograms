@@ -9,6 +9,9 @@ https://steam.oxxostudio.tw/category/python/basic/format.html#a2
 f-string
 https://steam.oxxostudio.tw/category/python/basic/format.html#a3
 
+string operation and conversion
+https://steam.oxxostudio.tw/category/python/basic/builtin-string.html
+
 """
 
 # string
