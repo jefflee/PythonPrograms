@@ -3,6 +3,9 @@ from ConcreteStrategyA import ConcreteStrategyA
 from ConcreteStrategyB import ConcreteStrategyB
 from Context import Context
 
+
+# https://refactoring.guru/design-patterns/strategy
+
 if __name__ == "__main__":
     # The client code picks a concrete strategy and passes it to the context.
     # The client should be aware of the differences between strategies in order
