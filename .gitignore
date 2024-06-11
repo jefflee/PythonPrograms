@@ -161,3 +161,7 @@ cython_debug/
 file_test_folder/zip/zipedFile.zip
 file_test_folder/zip/unzip_folder/1.png
 file_test_folder/zip/unzip_folder/2.png
+file_test_folder/pandas/test.csv
+file_test_folder/pandas/test.feather
+file_test_folder/pandas/test.parquet
+file_test_folder/pandas/test.pickle
