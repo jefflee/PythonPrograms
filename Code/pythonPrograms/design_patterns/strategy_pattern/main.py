@@ -1,4 +1,3 @@
-from __future__ import annotations
 from ConcreteStrategyA import ConcreteStrategyA
 from ConcreteStrategyB import ConcreteStrategyB
 from Context import Context
