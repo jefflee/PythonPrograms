@@ -2,6 +2,9 @@ from Facade import Facade
 from Subsystem1 import Subsystem1
 from Subsystem2 import Subsystem2
 
+"""
+https://refactoring.guru/design-patterns/facade/python/example 
+"""
 
 def client_code(facade: Facade) -> None:
     """

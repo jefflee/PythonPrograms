@@ -1,14 +1,17 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
-'''
+"""
 It's interesting. 
 There is a back reference in State abastract class. 
 If I seperate to different files, it show curcular import error.
 In the original state pattern, there is no this kind of back reference.
 I think this example doesn't follow the original pattern, but it put the logic to each state class.
 This is a good design. So, I think it is not bad.
-'''
+
+https://refactoring.guru/design-patterns/state/python/example
+
+"""
 
 class Context:
     """
