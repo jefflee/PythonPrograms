@@ -1,3 +1,4 @@
+# Refer to https://docs.python.org/3/library/stdtypes.html#typesmapping
 print("======================  Declaration  =========================")
 a = {'name':'oxxo','age':18,'eat':['apple','banana']}
 print(type(a));    # <class 'dict'>
