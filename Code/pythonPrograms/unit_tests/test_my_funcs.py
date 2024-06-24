@@ -3,6 +3,8 @@ from my_funcs import add, subtract, multiply, divide
 
 """
 Run tests
+python -m pytest
+or
 python -m pytest test_calculator.py
 """
 
